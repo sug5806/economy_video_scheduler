@@ -37,7 +37,7 @@ public class ScheduleService {
     private void setUp() {
         System.setProperty(WEB_DRIVER_ID, WEB_DRIVER_PATH);
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("headless");
+        chromeOptions.addArguments("--headless");
 
         webDriver = new ChromeDriver(chromeOptions);
         webDriver.manage().window().maximize();
