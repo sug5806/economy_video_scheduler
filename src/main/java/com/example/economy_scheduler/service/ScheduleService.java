@@ -26,7 +26,7 @@ public class ScheduleService {
     private static WebDriver webDriver;
     private static JavascriptExecutor js;
     private static String WEB_DRIVER_ID = "webdriver.chrome.driver";
-    private static String WEB_DRIVER_PATH = "/home/sug5806";
+    private static String WEB_DRIVER_PATH = "/home/sug5806/chromedriver";
     private final EconomyVideoRepository economyVideoRepository;
 
     @PostConstruct
