@@ -38,6 +38,7 @@ public class ScheduleService {
         System.setProperty(WEB_DRIVER_ID, WEB_DRIVER_PATH);
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--disable-dev-shm-usage");
 
         webDriver = new ChromeDriver(chromeOptions);
         webDriver.manage().window().maximize();
