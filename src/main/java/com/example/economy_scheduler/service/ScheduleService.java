@@ -39,6 +39,7 @@ public class ScheduleService {
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--headless");
         chromeOptions.addArguments("--disable-dev-shm-usage");
+        chromeOptions.addArguments("--no-sandbox");
 
         webDriver = new ChromeDriver(chromeOptions);
         webDriver.manage().window().maximize();
