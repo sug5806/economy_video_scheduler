@@ -37,9 +37,9 @@ public class ScheduleService {
     private void setUp() {
         System.setProperty(WEB_DRIVER_ID, WEB_DRIVER_PATH);
         ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("--headless");
-        chromeOptions.addArguments("--disable-dev-shm-usage");
-        chromeOptions.addArguments("--no-sandbox");
+        chromeOptions.addArguments("headless");
+        chromeOptions.addArguments("disable-dev-shm-usage");
+        chromeOptions.addArguments("no-sandbox");
 
         webDriver = new ChromeDriver(chromeOptions);
         webDriver.manage().window().maximize();
